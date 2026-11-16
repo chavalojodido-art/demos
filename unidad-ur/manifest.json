@@ -1,0 +1,16 @@
+{
+  "name": "Unidad de Diagnóstico UR (demo)",
+  "short_name": "Unidad UR",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F8FB",
+  "theme_color": "#203159",
+  "description": "Demo — Unidad de Diagnóstico UR · Medical Center, Río Blanco. Versión de muestra, no oficial.",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

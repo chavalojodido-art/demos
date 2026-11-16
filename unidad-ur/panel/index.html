@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#203159">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Panel UR">
+  <meta name="description" content="Panel de demostración del doctor. Datos de ejemplo en este navegador. No es un expediente clínico.">
+  <title>Panel del doctor · Unidad UR (demo)</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon-180.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/extras.css">
+</head>
+<body class="panel-page">
+  <div class="demo-banner" role="note">Panel de demostración · los nombres marcados como ejemplo son ficticios · nada se envía a un servidor</div>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="../">
+        <img src="../assets/icons/icon-192.png" width="48" height="48" alt="">
+        <span class="brand-text">
+          <span>Unidad de Diagnóstico</span>
+          <strong>Panel del doctor</strong>
+          <small>DEMO</small>
+        </span>
+      </a>
+      <a class="btn btn-ghost header-cta" href="../#citas">Volver a la agenda</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="panel-head">
+      <div>
+        <h1 style="margin:0;font-size:1.5rem">Citas del día</h1>
+        <p class="hint" id="titulo-dia"></p>
+      </div>
+      <label>Ver día
+        <input id="filtro-dia" type="date" data-test="filtro-dia">
+      </label>
+    </div>
+    <div class="kpi">
+      <div><b id="kpi-hoy">0</b><span>Citas en este día</span></div>
+      <div><b id="kpi-pend">0</b><span>Pendientes de confirmar</span></div>
+      <div><b id="kpi-night">0</b><span>Llegaron de madrugada</span></div>
+    </div>
+    <p class="hint">Las que llegan de madrugada se resaltan: son las que hoy se perderían si nadie está despierto para contestar WhatsApp.</p>
+    <div id="lista-citas" data-test="lista-citas"></div>
+
+    <section class="bloqueos">
+      <h2 style="margin:0 0 8px;font-size:1.1rem">Bloquear horarios</h2>
+      <p class="hint">Marcá un cupo para que no aparezca disponible en la agenda del paciente. Solo queda en este teléfono.</p>
+      <label>Profesional
+        <select id="bloqueo-medico"></select>
+      </label>
+      <div id="horas-bloqueo" style="margin-top:12px"></div>
+    </section>
+    <p style="margin:22px 0 40px"><a class="btn btn-navy" href="../#citas">Agendar una cita de prueba</a></p>
+  </main>
+  <footer class="pie">
+    <div class="wrap">
+      <p class="demo-mark">Versión de muestra / Demo · Este panel no es un expediente clínico y no está indexado.</p>
+    </div>
+  </footer>
+  <script src="../js/extras.js"></script>
+  <script src="../js/citas.js"></script>
+  <script src="../js/panel.js"></script>
+</body>
+</html>
