@@ -1,8 +1,10 @@
 /* Eco-Lodge Cascada Blanca — demo site */
 const WA_NUMBER = "50558469876";
-/* Pon esto en true cuando coloques media/hero.mp4 (Google Flow). Evita un 404 si el archivo aún no está. */
-const HERO_VIDEO_ENABLED = false;
-const HERO_VIDEO_PATH = "media/hero.mp4";
+const HERO_VIDEO_ENABLED = true;
+const HERO_VIDEO = {
+  desktop: { mp4: "media/hero.mp4", webm: "media/hero.webm" },
+  mobile: { mp4: "media/hero-mobile.mp4", webm: "media/hero-mobile.webm" }
+};
 
 const I18N = {
   es: {
@@ -251,37 +253,63 @@ function setupHero() {
   if (!video) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const enabled = HERO_VIDEO_ENABLED || video.getAttribute("data-enabled") === "true";
-  if (!enabled || reduce) {
+  const clearSources = () => {
+    video.querySelectorAll("source").forEach((s) => s.remove());
     video.removeAttribute("src");
     video.removeAttribute("autoplay");
+    video.autoplay = false;
+    try { video.load(); } catch (e) {}
+  };
+  if (!enabled || reduce) {
+    clearSources();
     return;
   }
   const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
   const saveData = !!(conn && (conn.saveData || /2g/.test(conn.effectiveType || "")));
-  video.preload = saveData ? "none" : "metadata";
-  const source = document.createElement("source");
-  source.src = video.getAttribute("data-src") || HERO_VIDEO_PATH;
-  source.type = "video/mp4";
-  video.appendChild(source);
+  const mobile = window.matchMedia("(max-width: 720px) and (orientation: portrait)").matches;
+  const pack = mobile ? HERO_VIDEO.mobile : HERO_VIDEO.desktop;
+  const media = mobile ? "(max-width: 720px) and (orientation: portrait)" : "";
+  /* Reconstruimos las fuentes para que Safari (apoyo irregular de media en <source>) reciba el archivo correcto. */
+  video.querySelectorAll("source").forEach((s) => s.remove());
+  const add = (src, type) => {
+    if (!src) return;
+    if (type.indexOf("webm") !== -1) {
+      const ok = video.canPlayType('video/webm; codecs="vp9"') || video.canPlayType("video/webm");
+      if (!ok) return;
+    }
+    const source = document.createElement("source");
+    source.src = src;
+    source.type = type;
+    if (media) source.media = media;
+    video.appendChild(source);
+  };
+  add(pack.webm, "video/webm");
+  add(pack.mp4, "video/mp4");
   video.classList.add("is-on");
   video.muted = true;
   video.defaultMuted = true;
   video.playsInline = true;
+  video.loop = true;
   video.setAttribute("playsinline", "");
   video.setAttribute("muted", "");
+  video.setAttribute("loop", "");
   const fail = () => {
     video.classList.remove("is-on");
+    video.removeAttribute("autoplay");
     if (poster) poster.classList.remove("is-hidden");
   };
   video.addEventListener("error", fail);
-  source.addEventListener("error", fail);
   video.addEventListener("playing", () => { if (poster) poster.classList.add("is-hidden"); });
-  const play = () => video.play().catch(fail);
   if (saveData) {
-    /* En datos lentos no auto-reproducimos; el póster se queda. Se puede pulsar después si se desea. */
     video.preload = "none";
+    video.removeAttribute("autoplay");
+    video.autoplay = false;
   } else {
-    play();
+    video.preload = "metadata";
+    video.autoplay = true;
+    video.setAttribute("autoplay", "");
+    video.load();
+    video.play().catch(fail);
   }
 }
 

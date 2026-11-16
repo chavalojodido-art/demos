@@ -1,30 +1,24 @@
 Fondo de video del hero (portada)
 =================================
 
-Cuando esté listo el video corto de la cascada (Google Flow u otro):
+Archivos web (estos sí se publican):
 
-1. Guarda el archivo aquí, con este nombre exacto:
+  hero.mp4 / hero.webm             Escritorio 16:9, 1280×720, 7 s, sin audio
+  hero-mobile.mp4 / hero-mobile.webm
+                                   Móvil vertical 9:16, 720×1280, 7 s, sin audio
 
-   demos/cascada-blanca/media/hero.mp4
+El loop tiene un fundido (crossfade) de ~0,8 s entre el final y el inicio
+para que no se note el corte. El póster es el primer fotograma de ese loop
+(assets/photos/hero-video-16x9-* y hero-video-9x16-*).
 
-   (en el sitio publicado: /cascada-blanca/media/hero.mp4)
+Para activar o desactivar: HERO_VIDEO_ENABLED en js/site.js, o data-enabled
+en el <video id="heroVideo">.
 
-2. Activa el video de una de estas dos formas (basta con una):
-   - En js/site.js, pon:  const HERO_VIDEO_ENABLED = true;
-   - O en index.html, en el <video id="heroVideo">, cambia data-enabled="false" a data-enabled="true".
+Comportamiento:
+  - autoplay, muted, loop, playsinline
+  - <source media> sirve el recorte vertical en móvil (máx. 720 px y portrait)
+  - En datos móviles (saveData o 2g) el preload es "none" y no se auto-reproduce
+  - Si el video falla o hay prefers-reduced-motion, se queda el póster
 
-3. El <video> ya está preparado con: autoplay, muted, loop, playsinline.
-   - Póster: foto fija mejorada (assets/photos/hero-16x9-1280.jpg).
-   - En datos móviles (saveData o 2g) el preload es "none" y no se auto-reproduce.
-   - En el resto, preload="metadata".
-   - Si el video falla o el usuario tiene prefers-reduced-motion, se queda la foto.
-
-Mejores fotos para animar en Flow (ya mejoradas, recortadas):
-
-- Horizontal 16:9 (recomendada para escritorio y póster):
-  assets/photos/masters/hero-16x9.jpg
-  (origen: TripAdvisor, «vista del mirador Yasica», 1600×900)
-
-- Vertical 9:16 (recomendada para móvil / Stories):
-  assets/photos/masters/hero-9x16.jpg
-  (origen: blog ILP 2022, desde el interior de la cueva, 1440×2560)
+NO subas ni publiques hero_flow_original.mp4 (el master de Veo/Flow).
+El script publicar/sincronizar_cascada_blanca.sh lo excluye a propósito.

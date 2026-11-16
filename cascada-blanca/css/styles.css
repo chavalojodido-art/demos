@@ -143,15 +143,16 @@ h1, h2, h3, .brand-name, .hero-title, .hero-tag {
 .hero-overlay {
   position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(180deg, rgba(18,24,12,.28) 0%, rgba(18,24,12,.18) 40%, rgba(18,24,12,.72) 100%);
+    linear-gradient(180deg, rgba(18,24,12,.34) 0%, rgba(18,24,12,.22) 42%, rgba(18,24,12,.78) 100%),
+    rgba(18,24,12,.10);
 }
 .hero-content { position: relative; width: min(1120px, calc(100% - 32px)); margin: 0 auto 48px; }
 .hero-kicker {
   display: inline-block; text-transform: uppercase; letter-spacing: .16em;
   font-size: .72rem; font-weight: 700; margin: 0 0 12px; color: #f0e6d0;
 }
-.hero-title { color: #fff; font-size: clamp(1.85rem, 6vw, 3.4rem); max-width: 18ch; margin: 0 0 16px; }
-.hero-lead { margin: 0 0 24px; max-width: 38ch; font-size: 1.08rem; color: rgba(255,255,255,.92); }
+.hero-title { color: #fff; font-size: clamp(1.85rem, 6vw, 3.4rem); max-width: 18ch; margin: 0 0 16px; text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+.hero-lead { margin: 0 0 24px; max-width: 38ch; font-size: 1.08rem; color: rgba(255,255,255,.92); text-shadow: 0 1px 12px rgba(0,0,0,.4); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .award-bar {
   background: var(--green-900); color: #f3ead8; padding: 14px 0;
