@@ -1,0 +1,726 @@
+[
+  {
+    "master": "assets/photos/masters/hero-16x9.jpg",
+    "width": 1600,
+    "height": 900,
+    "variants": [
+      {
+        "w": 480,
+        "h": 270,
+        "webp": "assets/photos/hero-16x9-480.webp",
+        "jpg": "assets/photos/hero-16x9-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 450,
+        "webp": "assets/photos/hero-16x9-800.webp",
+        "jpg": "assets/photos/hero-16x9-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 720,
+        "webp": "assets/photos/hero-16x9-1280.webp",
+        "jpg": "assets/photos/hero-16x9-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 900,
+        "webp": "assets/photos/hero-16x9-1600.webp",
+        "jpg": "assets/photos/hero-16x9-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/hero-16x9.webp",
+    "src_jpg": "assets/photos/hero-16x9.jpg",
+    "slug": "hero-16x9",
+    "role": "hero-poster-16x9 / animar en Flow",
+    "credit": "TripAdvisor — «vista del mirador Yasica» (photo-o/0f/70/af/f1)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0f70aff1_vista-del-mirador-yasica.jpg"
+  },
+  {
+    "master": "assets/photos/masters/hero-9x16.jpg",
+    "width": 1440,
+    "height": 2560,
+    "variants": [
+      {
+        "w": 480,
+        "h": 853,
+        "webp": "assets/photos/hero-9x16-480.webp",
+        "jpg": "assets/photos/hero-9x16-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "webp": "assets/photos/hero-9x16-800.webp",
+        "jpg": "assets/photos/hero-9x16-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 2276,
+        "webp": "assets/photos/hero-9x16-1280.webp",
+        "jpg": "assets/photos/hero-9x16-1280.jpg"
+      }
+    ],
+    "src": "assets/photos/hero-9x16.webp",
+    "src_jpg": "assets/photos/hero-9x16.jpg",
+    "slug": "hero-9x16",
+    "role": "hero-poster-9x16 / animar en Flow (vertical, desde la cueva)",
+    "credit": "Blog ILP, Emily Henkel, 31 ago 2022 (IMG_2097-1), sección Cascada Santa Emilia / Cascada Blanca",
+    "source_file": "/tmp/cb_photos/raw/ilp/IMG_2097-1.jpg"
+  },
+  {
+    "master": "assets/photos/masters/bajo-el-rio.jpg",
+    "width": 1920,
+    "height": 1440,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/bajo-el-rio-480.webp",
+        "jpg": "assets/photos/bajo-el-rio-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/bajo-el-rio-800.webp",
+        "jpg": "assets/photos/bajo-el-rio-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/bajo-el-rio-1280.webp",
+        "jpg": "assets/photos/bajo-el-rio-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/bajo-el-rio-1600.webp",
+        "jpg": "assets/photos/bajo-el-rio-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/bajo-el-rio.webp",
+    "src_jpg": "assets/photos/bajo-el-rio.jpg",
+    "slug": "bajo-el-rio",
+    "role": "caminar debajo del río",
+    "credit": "Blog ILP, Emily Henkel, 31 ago 2022 (IMG_2011 2)",
+    "source_file": "/tmp/cb_photos/raw/ilp/IMG_2011_2.jpeg"
+  },
+  {
+    "master": "assets/photos/masters/cueva.jpg",
+    "width": 1920,
+    "height": 2560,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "assets/photos/cueva-480.webp",
+        "jpg": "assets/photos/cueva-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "webp": "assets/photos/cueva-800.webp",
+        "jpg": "assets/photos/cueva-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 1707,
+        "webp": "assets/photos/cueva-1280.webp",
+        "jpg": "assets/photos/cueva-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "webp": "assets/photos/cueva-1600.webp",
+        "jpg": "assets/photos/cueva-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/cueva.webp",
+    "src_jpg": "assets/photos/cueva.jpg",
+    "slug": "cueva",
+    "role": "cueva detrás de la cascada",
+    "credit": "Blog ILP, Emily Henkel, 31 ago 2022 (IMG_2097-1)",
+    "source_file": "/tmp/cb_photos/raw/ilp/IMG_2097-1.jpg"
+  },
+  {
+    "master": "assets/photos/masters/cascada-seda.jpg",
+    "width": 1200,
+    "height": 675,
+    "variants": [
+      {
+        "w": 480,
+        "h": 270,
+        "webp": "assets/photos/cascada-seda-480.webp",
+        "jpg": "assets/photos/cascada-seda-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 450,
+        "webp": "assets/photos/cascada-seda-800.webp",
+        "jpg": "assets/photos/cascada-seda-800.jpg"
+      }
+    ],
+    "src": "assets/photos/cascada-seda.webp",
+    "src_jpg": "assets/photos/cascada-seda.jpg",
+    "slug": "cascada-seda",
+    "role": "cascada (galería, 16:9)",
+    "credit": "El Diario Nica, 13 jun 2024",
+    "source_file": "/tmp/cb_photos/raw/diario/diario_2024_proyecto.webp"
+  },
+  {
+    "master": "assets/photos/masters/cascada-orilla.jpg",
+    "width": 1600,
+    "height": 1600,
+    "variants": [
+      {
+        "w": 480,
+        "h": 480,
+        "webp": "assets/photos/cascada-orilla-480.webp",
+        "jpg": "assets/photos/cascada-orilla-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 800,
+        "webp": "assets/photos/cascada-orilla-800.webp",
+        "jpg": "assets/photos/cascada-orilla-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 1280,
+        "webp": "assets/photos/cascada-orilla-1280.webp",
+        "jpg": "assets/photos/cascada-orilla-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1600,
+        "webp": "assets/photos/cascada-orilla-1600.webp",
+        "jpg": "assets/photos/cascada-orilla-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/cascada-orilla.webp",
+    "src_jpg": "assets/photos/cascada-orilla.jpg",
+    "slug": "cascada-orilla",
+    "role": "cascada desde la orilla",
+    "credit": "TripAdvisor — foto de visitante (photo-o/11/9e/f3/1a)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_119ef31a_photo0jpg.jpg"
+  },
+  {
+    "master": "assets/photos/masters/cascada-yaguare.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/cascada-yaguare-480.webp",
+        "jpg": "assets/photos/cascada-yaguare-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/cascada-yaguare-800.webp",
+        "jpg": "assets/photos/cascada-yaguare-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/cascada-yaguare-1280.webp",
+        "jpg": "assets/photos/cascada-yaguare-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/cascada-yaguare-1600.webp",
+        "jpg": "assets/photos/cascada-yaguare-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/cascada-yaguare.webp",
+    "src_jpg": "assets/photos/cascada-yaguare.jpg",
+    "slug": "cascada-yaguare",
+    "role": "mirador Yasica y Yaguare",
+    "credit": "TripAdvisor — «mirador Yasica y Yaguare» (photo-o/0f/71/43/4e)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0f71434e_mirador-yasica-y-yaguare.jpg"
+  },
+  {
+    "master": "assets/photos/masters/cascada-vertical.jpg",
+    "width": 1920,
+    "height": 2560,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "assets/photos/cascada-vertical-480.webp",
+        "jpg": "assets/photos/cascada-vertical-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "webp": "assets/photos/cascada-vertical-800.webp",
+        "jpg": "assets/photos/cascada-vertical-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 1707,
+        "webp": "assets/photos/cascada-vertical-1280.webp",
+        "jpg": "assets/photos/cascada-vertical-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "webp": "assets/photos/cascada-vertical-1600.webp",
+        "jpg": "assets/photos/cascada-vertical-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/cascada-vertical.webp",
+    "src_jpg": "assets/photos/cascada-vertical.jpg",
+    "slug": "cascada-vertical",
+    "role": "cascada vertical (galería)",
+    "credit": "Blog ILP, Emily Henkel, 31 ago 2022 (IMG_2089-2), sección Cascada Blanca",
+    "source_file": "/tmp/cb_photos/raw/ilp/IMG_2089-2.jpg"
+  },
+  {
+    "master": "assets/photos/masters/senderos-del-amor.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/senderos-del-amor-480.webp",
+        "jpg": "assets/photos/senderos-del-amor-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/senderos-del-amor-800.webp",
+        "jpg": "assets/photos/senderos-del-amor-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/senderos-del-amor-1280.webp",
+        "jpg": "assets/photos/senderos-del-amor-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/senderos-del-amor-1600.webp",
+        "jpg": "assets/photos/senderos-del-amor-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/senderos-del-amor.webp",
+    "src_jpg": "assets/photos/senderos-del-amor.jpg",
+    "slug": "senderos-del-amor",
+    "role": "senderos",
+    "credit": "TripAdvisor — «senderos» / letrero Senderos del Amor (photo-o/0d/de/68/4d)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde684d_senderos.jpg"
+  },
+  {
+    "master": "assets/photos/masters/senderos-selva.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/senderos-selva-480.webp",
+        "jpg": "assets/photos/senderos-selva-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/senderos-selva-800.webp",
+        "jpg": "assets/photos/senderos-selva-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/senderos-selva-1280.webp",
+        "jpg": "assets/photos/senderos-selva-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/senderos-selva-1600.webp",
+        "jpg": "assets/photos/senderos-selva-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/senderos-selva.webp",
+    "src_jpg": "assets/photos/senderos-selva.jpg",
+    "slug": "senderos-selva",
+    "role": "senderos",
+    "credit": "TripAdvisor — «senderos» (photo-o/0d/de/68/8b)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde688b_senderos.jpg"
+  },
+  {
+    "master": "assets/photos/masters/entrada-senderos.jpg",
+    "width": 1125,
+    "height": 1500,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "assets/photos/entrada-senderos-480.webp",
+        "jpg": "assets/photos/entrada-senderos-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "webp": "assets/photos/entrada-senderos-800.webp",
+        "jpg": "assets/photos/entrada-senderos-800.jpg"
+      }
+    ],
+    "src": "assets/photos/entrada-senderos.webp",
+    "src_jpg": "assets/photos/entrada-senderos.jpg",
+    "slug": "entrada-senderos",
+    "role": "entrada a los senderos",
+    "credit": "TripAdvisor — «area entrada a los senderos» (photo-o/0d/de/68/68)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde6868_area-entrada-a-los-senderos.jpg"
+  },
+  {
+    "master": "assets/photos/masters/habitacion.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/habitacion-480.webp",
+        "jpg": "assets/photos/habitacion-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/habitacion-800.webp",
+        "jpg": "assets/photos/habitacion-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/habitacion-1280.webp",
+        "jpg": "assets/photos/habitacion-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/habitacion-1600.webp",
+        "jpg": "assets/photos/habitacion-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/habitacion.webp",
+    "src_jpg": "assets/photos/habitacion.jpg",
+    "slug": "habitacion",
+    "role": "hospedaje / habitación",
+    "credit": "TripAdvisor — foto de habitación (photo-o/0d/de/69/3c)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde693c_cascada-blanca.jpg"
+  },
+  {
+    "master": "assets/photos/masters/lodge.jpg",
+    "width": 1920,
+    "height": 2560,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "assets/photos/lodge-480.webp",
+        "jpg": "assets/photos/lodge-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "webp": "assets/photos/lodge-800.webp",
+        "jpg": "assets/photos/lodge-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 1707,
+        "webp": "assets/photos/lodge-1280.webp",
+        "jpg": "assets/photos/lodge-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "webp": "assets/photos/lodge-1600.webp",
+        "jpg": "assets/photos/lodge-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/lodge.webp",
+    "src_jpg": "assets/photos/lodge.jpg",
+    "slug": "lodge",
+    "role": "hospedaje / restaurante junto a la cascada",
+    "credit": "Blog ILP, Emily Henkel, 31 ago 2022 (IMG_2079); se ve el letrero Cascada Blanca",
+    "source_file": "/tmp/cb_photos/raw/ilp/IMG_2079.jpeg"
+  },
+  {
+    "master": "assets/photos/masters/restaurante-plato.jpg",
+    "width": 1600,
+    "height": 2133,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "assets/photos/restaurante-plato-480.webp",
+        "jpg": "assets/photos/restaurante-plato-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 1066,
+        "webp": "assets/photos/restaurante-plato-800.webp",
+        "jpg": "assets/photos/restaurante-plato-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 1706,
+        "webp": "assets/photos/restaurante-plato-1280.webp",
+        "jpg": "assets/photos/restaurante-plato-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 2133,
+        "webp": "assets/photos/restaurante-plato-1600.webp",
+        "jpg": "assets/photos/restaurante-plato-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/restaurante-plato.webp",
+    "src_jpg": "assets/photos/restaurante-plato.jpg",
+    "slug": "restaurante-plato",
+    "role": "restaurante",
+    "credit": "TripAdvisor — foto de visitante «Wunderbares Essen» (photo-o/2c/a7/5f/24)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_2ca75f24_wunderbares-essen-alles.jpg"
+  },
+  {
+    "master": "assets/photos/masters/entrada.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/entrada-480.webp",
+        "jpg": "assets/photos/entrada-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/entrada-800.webp",
+        "jpg": "assets/photos/entrada-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/entrada-1280.webp",
+        "jpg": "assets/photos/entrada-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/entrada-1600.webp",
+        "jpg": "assets/photos/entrada-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/entrada.webp",
+    "src_jpg": "assets/photos/entrada.jpg",
+    "slug": "entrada",
+    "role": "entrada / recepción",
+    "credit": "TripAdvisor — «entrada principal» (photo-o/0d/de/68/0c)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde680c_entrada-principal.jpg"
+  },
+  {
+    "master": "assets/photos/masters/recepcion.jpg",
+    "width": 800,
+    "height": 600,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/recepcion-480.webp",
+        "jpg": "assets/photos/recepcion-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/recepcion-800.webp",
+        "jpg": "assets/photos/recepcion-800.jpg"
+      }
+    ],
+    "src": "assets/photos/recepcion.webp",
+    "src_jpg": "assets/photos/recepcion.jpg",
+    "slug": "recepcion",
+    "role": "recepción / café de la entrada",
+    "credit": "TripAdvisor — «area de recepcion» (photo-o/0d/de/67/c6)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde67c6_area-de-recepcion.jpg"
+  },
+  {
+    "master": "assets/photos/masters/parqueo.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/parqueo-480.webp",
+        "jpg": "assets/photos/parqueo-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/parqueo-800.webp",
+        "jpg": "assets/photos/parqueo-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/parqueo-1280.webp",
+        "jpg": "assets/photos/parqueo-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/parqueo-1600.webp",
+        "jpg": "assets/photos/parqueo-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/parqueo.webp",
+    "src_jpg": "assets/photos/parqueo.jpg",
+    "slug": "parqueo",
+    "role": "cómo llegar / parqueo",
+    "credit": "TripAdvisor — «entrada al parqueo» (photo-o/0d/de/6a/eb)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0dde6aeb_entrada-al-parqueo.jpg"
+  },
+  {
+    "master": "assets/photos/masters/camion.jpg",
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/camion-480.webp",
+        "jpg": "assets/photos/camion-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 600,
+        "webp": "assets/photos/camion-800.webp",
+        "jpg": "assets/photos/camion-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 960,
+        "webp": "assets/photos/camion-1280.webp",
+        "jpg": "assets/photos/camion-1280.jpg"
+      },
+      {
+        "w": 1600,
+        "h": 1200,
+        "webp": "assets/photos/camion-1600.webp",
+        "jpg": "assets/photos/camion-1600.jpg"
+      }
+    ],
+    "src": "assets/photos/camion.webp",
+    "src_jpg": "assets/photos/camion.jpg",
+    "slug": "camion",
+    "role": "camión desde Matagalpa",
+    "credit": "TripAdvisor — «servicio de transporte» (photo-o/0f/71/43/cb)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_0f7143cb_servicio-de-transporte.jpg"
+  },
+  {
+    "master": "assets/photos/masters/equipo.jpg",
+    "width": 1280,
+    "height": 853,
+    "variants": [
+      {
+        "w": 480,
+        "h": 320,
+        "webp": "assets/photos/equipo-480.webp",
+        "jpg": "assets/photos/equipo-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 533,
+        "webp": "assets/photos/equipo-800.webp",
+        "jpg": "assets/photos/equipo-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 853,
+        "webp": "assets/photos/equipo-1280.webp",
+        "jpg": "assets/photos/equipo-1280.jpg"
+      }
+    ],
+    "src": "assets/photos/equipo.webp",
+    "src_jpg": "assets/photos/equipo.jpg",
+    "slug": "equipo",
+    "role": "equipo / testimonios",
+    "credit": "TripAdvisor — «cascada blanca staff» (photo-o/23/1d/7e/9e)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_231d7e9e_cascada-blanca-staff.jpg"
+  },
+  {
+    "master": "assets/photos/masters/cueva-columpio.jpg",
+    "width": 768,
+    "height": 1024,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "assets/photos/cueva-columpio-480.webp",
+        "jpg": "assets/photos/cueva-columpio-480.jpg"
+      }
+    ],
+    "src": "assets/photos/cueva-columpio.webp",
+    "src_jpg": "assets/photos/cueva-columpio.jpg",
+    "slug": "cueva-columpio",
+    "role": "cueva / camping",
+    "credit": "TripAdvisor — foto de visitante (photo-o/2b/5c/b8/f0)",
+    "source_file": "/tmp/cb_photos/raw/ta/ta_2b5cb8f0_caption.jpg"
+  },
+  {
+    "master": "assets/photos/masters/flores-cascada.jpg",
+    "width": 1280,
+    "height": 669,
+    "variants": [
+      {
+        "w": 480,
+        "h": 251,
+        "webp": "assets/photos/flores-cascada-480.webp",
+        "jpg": "assets/photos/flores-cascada-480.jpg"
+      },
+      {
+        "w": 800,
+        "h": 418,
+        "webp": "assets/photos/flores-cascada-800.webp",
+        "jpg": "assets/photos/flores-cascada-800.jpg"
+      },
+      {
+        "w": 1280,
+        "h": 669,
+        "webp": "assets/photos/flores-cascada-1280.webp",
+        "jpg": "assets/photos/flores-cascada-1280.jpg"
+      }
+    ],
+    "src": "assets/photos/flores-cascada.webp",
+    "src_jpg": "assets/photos/flores-cascada.jpg",
+    "slug": "flores-cascada",
+    "role": "cascada (galería)",
+    "credit": "El Diario Nica, 13 sep 2023 (IMG_7829)",
+    "source_file": "/tmp/cb_photos/raw/diario/diario_2023_img7829.jpg"
+  },
+  {
+    "master": "assets/photos/masters/sendero-letrero.jpg",
+    "width": 700,
+    "height": 525,
+    "variants": [
+      {
+        "w": 480,
+        "h": 360,
+        "webp": "assets/photos/sendero-letrero-480.webp",
+        "jpg": "assets/photos/sendero-letrero-480.jpg"
+      }
+    ],
+    "src": "assets/photos/sendero-letrero.webp",
+    "src_jpg": "assets/photos/sendero-letrero.jpg",
+    "slug": "sendero-letrero",
+    "role": "senderos (detalle letrero)",
+    "credit": "El Diario Nica, 13 sep 2023 (IMG_7827)",
+    "source_file": "/tmp/cb_photos/raw/diario/diario_2023_img7827.jpg"
+  }
+]

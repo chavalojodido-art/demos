@@ -1,0 +1,16 @@
+{
+  "name": "Eco-Lodge Cascada Blanca (demo)",
+  "short_name": "Cascada Blanca",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF8F2",
+  "theme_color": "#3D4F1E",
+  "description": "Demo — Eco-Lodge Cascada Blanca, Matagalpa. Versión de muestra, no oficial.",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

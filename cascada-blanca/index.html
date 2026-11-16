@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#3D4F1E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cascada Blanca">
+  <meta name="description" content="Demo — Eco-Lodge Cascada Blanca, Matagalpa. El único lugar en Nicaragua donde puedes caminar debajo de un río. Versión de muestra, no indexar.">
+  <title>Eco-Lodge Cascada Blanca — San Ramón, Matagalpa (demo)</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180.png">
+  <link rel="preload" href="assets/fonts/fraunces-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sourcesans3-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="assets/photos/hero-16x9-800.webp" imagesrcset="assets/photos/hero-16x9-480.webp 480w, assets/photos/hero-16x9-800.webp 800w, assets/photos/hero-16x9-1280.webp 1280w, assets/photos/hero-16x9-1600.webp 1600w" imagesizes="100vw">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/icons/icon-192.png" width="40" height="40" alt="">
+        <p class="brand-name">Cascada Blanca</p>
+      </a>
+      <nav class="nav" id="menu">
+        <a href="#experiencias" data-i18n="navExperiencias">Experiencias</a>
+        <a href="#galeria" data-i18n="navGaleria">Galería</a>
+        <a href="#hospedaje" data-i18n="navHospedaje">Hospedaje</a>
+        <a href="#llegar" data-i18n="navLlegar">Cómo llegar</a>
+        <a href="#reservas" data-i18n="navReservas">Reservar</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn btn-primary header-cta" href="#reservas" data-i18n="ctaReservar">Reservar</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menú">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="hero-media" aria-hidden="true">
+        <!-- Cuando exista media/hero.mp4, pon data-enabled="true" en el video o HERO_VIDEO_ENABLED en js/site.js -->
+        <video id="heroVideo" class="hero-video" muted loop playsinline preload="none" poster="assets/photos/hero-16x9-1280.jpg" data-src="media/hero.mp4" data-enabled="false" disablepictureinpicture></video>
+        <picture>
+          <source media="(max-width: 720px) and (orientation: portrait)" type="image/webp" srcset="assets/photos/hero-9x16-480.webp 480w, assets/photos/hero-9x16-800.webp 800w" sizes="100vw">
+          <source type="image/webp" srcset="assets/photos/hero-16x9-480.webp 480w, assets/photos/hero-16x9-800.webp 800w, assets/photos/hero-16x9-1280.webp 1280w, assets/photos/hero-16x9-1600.webp 1600w" sizes="100vw">
+          <img id="heroPoster" class="hero-poster" src="assets/photos/hero-16x9-800.jpg" width="1600" height="900" alt="Cascada Blanca y la cueva, vistas desde el mirador Yasica" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-kicker" data-i18n="heroKicker">Matagalpa, Nicaragua</p>
+        <h1 class="hero-title" data-i18n="heroTitle">El único lugar en Nicaragua donde puedes caminar debajo de un río</h1>
+        <p class="hero-lead" data-i18n="heroLead">Cascada de 17 metros, cueva, senderos y un eco-lodge junto al agua, a 17 km de Matagalpa.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#reservas" data-i18n="ctaReservar">Reservar</a>
+          <a class="btn btn-ghost" href="#experiencias" data-i18n="ctaVer">Ver el lugar</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="award-bar">
+      <div class="wrap" data-i18n="award">Premio Nacional Güegüense a la Excelencia Turística · CANATUR, Innovación Turística, 2018.</div>
+    </div>
+
+    <section id="experiencias">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="expKicker">Qué ofrecemos</p>
+        <h2 class="section-title" data-i18n="expTitle">Una reserva para quedarse el día o dormir con el sonido del agua</h2>
+        <p class="section-lead" data-i18n="expLead">Todo se reserva o se confirma por WhatsApp. Los precios se consultan; no los publicamos aquí porque varían y hay que confirmarlos con el lodge.</p>
+        <div class="cards cols-3">
+          <article class="card">
+            <div class="media">
+              <picture>
+                <source type="image/webp" srcset="assets/photos/bajo-el-rio-480.webp 480w, assets/photos/bajo-el-rio-800.webp 800w, assets/photos/bajo-el-rio-1280.webp 1280w" sizes="(max-width:700px) 100vw, 33vw">
+                <img src="assets/photos/bajo-el-rio-800.jpg" width="800" height="600" alt="Visitante caminando detrás de la cascada, bajo la roca" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="e1t">Caminar debajo del río</h3>
+              <p data-i18n="e1p">El salto de 17 metros y la cueva detrás de la caída.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="media">
+              <picture>
+                <source type="image/webp" srcset="assets/photos/senderos-del-amor-480.webp 480w, assets/photos/senderos-del-amor-800.webp 800w, assets/photos/senderos-del-amor-1280.webp 1280w" sizes="(max-width:700px) 100vw, 33vw">
+                <img src="assets/photos/senderos-del-amor-800.jpg" width="800" height="600" alt="Letrero de los Senderos del Amor en la reserva" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="e2t">Senderos</h3>
+              <p data-i18n="e2p">Caminos como el Sendero del Amor.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="media">
+              <picture>
+                <source type="image/webp" srcset="assets/photos/cueva-480.webp 480w, assets/photos/cueva-800.webp 800w, assets/photos/cueva-1280.webp 1280w" sizes="(max-width:700px) 100vw, 33vw">
+                <img src="assets/photos/cueva-800.jpg" width="800" height="1067" alt="La cascada vista desde el interior de la cueva" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="e3t">Cueva y camping</h3>
+              <p data-i18n="e3p">La cueva junto a la cascada, el rincón más buscado para acampar.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="media">
+              <picture>
+                <source type="image/webp" srcset="assets/photos/lodge-480.webp 480w, assets/photos/lodge-800.webp 800w, assets/photos/lodge-1280.webp 1280w" sizes="(max-width:700px) 100vw, 33vw">
+                <img src="assets/photos/lodge-800.jpg" width="800" height="1067" alt="Edificio del lodge y restaurante entre la vegetación" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="e4t">Tours de café y chocolate</h3>
+              <p data-i18n="e4p">Recorridos en la reserva y la zona cafetalera.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="media">
+              <picture>
+                <source type="image/webp" srcset="assets/photos/cascada-orilla-480.webp 480w, assets/photos/cascada-orilla-800.webp 800w, assets/photos/cascada-orilla-1280.webp 1280w" sizes="(max-width:700px) 100vw, 33vw">
+                <img src="assets/photos/cascada-orilla-800.jpg" width="800" height="800" alt="La poza y la caída, vistas desde la orilla" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="e5t">Kayak y rappel</h3>
+              <p data-i18n="e5p">Según el caudal, el clima y la temporada. Consulta disponibilidad.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="media">
+              <picture>
+                <source type="image/webp" srcset="assets/photos/camion-480.webp 480w, assets/photos/camion-800.webp 800w, assets/photos/camion-1280.webp 1280w" sizes="(max-width:700px) 100vw, 33vw">
+                <img src="assets/photos/camion-800.jpg" width="800" height="600" alt="Camión de Eco-Lodge Cascada Blanca frente a la catedral de Matagalpa" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="e6t">Camión desde Matagalpa</h3>
+              <p data-i18n="e6p">Transporte de ida y vuelta desde la ciudad. Se reserva por WhatsApp.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="galKicker">Galería</p>
+        <h2 class="section-title" data-i18n="galTitle">El agua, la cueva y la montaña</h2>
+        <p class="section-lead" data-i18n="galLead">Fotos reales del lugar, mejoradas solo en luz y nitidez.</p>
+        <div class="gallery">
+          <figure class="wide">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/hero-16x9-480.webp 480w, assets/photos/hero-16x9-800.webp 800w, assets/photos/hero-16x9-1280.webp 1280w, assets/photos/hero-16x9-1600.webp 1600w" sizes="(max-width:1120px) 100vw, 1120px">
+              <img src="assets/photos/hero-16x9-800.jpg" width="1600" height="900" alt="Cascada y cueva desde el mirador Yasica" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capCascada">La cascada y la cueva, vistas desde el mirador Yasica</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/photos/bajo-el-rio-480.webp 480w, assets/photos/bajo-el-rio-800.webp 800w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/bajo-el-rio-800.jpg" width="800" height="600" alt="Caminar detrás de la caída" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capBajo">Caminar detrás de la caída</figcaption>
+          </figure>
+          <figure class="tall">
+            <picture>
+              <source type="image/webp" srcset="assets/photos/cueva-480.webp 480w, assets/photos/cueva-800.webp 800w, assets/photos/cueva-1280.webp 1280w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/cueva-800.jpg" width="800" height="1067" alt="Interior de la cueva" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capCueva">Desde dentro de la cueva</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/photos/senderos-del-amor-480.webp 480w, assets/photos/senderos-del-amor-800.webp 800w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/senderos-del-amor-800.jpg" width="800" height="600" alt="Senderos del Amor" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capSenderos">Senderos del Amor</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/photos/lodge-480.webp 480w, assets/photos/lodge-800.webp 800w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/lodge-800.jpg" width="800" height="1067" alt="Lodge junto a la cascada" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capLodge">El lodge junto a la cascada</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/photos/entrada-480.webp 480w, assets/photos/entrada-800.webp 800w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/entrada-800.jpg" width="800" height="600" alt="Entrada del eco-lodge" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capEntrada">Entrada del Eco-Lodge Cascada Blanca</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/photos/camion-480.webp 480w, assets/photos/camion-800.webp 800w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/camion-800.jpg" width="800" height="600" alt="Camión del lodge en Matagalpa" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capCamion">El camión del lodge, en Matagalpa</figcaption>
+          </figure>
+          <figure>
+            <picture>
+              <source type="image/webp" srcset="assets/photos/restaurante-plato-480.webp 480w, assets/photos/restaurante-plato-800.webp 800w" sizes="(max-width:700px) 50vw, 25vw">
+              <img src="assets/photos/restaurante-plato-800.jpg" width="800" height="1066" alt="Plato del restaurante" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="capPlato">Cocina del restaurante</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="hospedaje">
+      <div class="wrap split">
+        <div class="media">
+          <picture>
+            <source type="image/webp" srcset="assets/photos/habitacion-480.webp 480w, assets/photos/habitacion-800.webp 800w, assets/photos/habitacion-1280.webp 1280w" sizes="(max-width:860px) 100vw, 50vw">
+            <img src="assets/photos/habitacion-800.jpg" width="800" height="600" alt="Habitación rústica del eco-lodge, con pared de ladrillo y cama sencilla" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div>
+          <p class="section-kicker" data-i18n="hosKicker">Hospedaje</p>
+          <h2 class="section-title" data-i18n="hosTitle">Cinco habitaciones y camping en la cueva</h2>
+          <p class="section-lead" data-i18n="hosLead">Es un eco-lodge rústico, no un hotel urbano.</p>
+          <h3 data-i18n="hosH3">Habitaciones</h3>
+          <p data-i18n="hosP">TripAdvisor registra 5 habitaciones.</p>
+          <h3 data-i18n="hosC3">Camping</h3>
+          <p data-i18n="hosC">Se puede acampar en la cueva, junto a la cascada.</p>
+          <p class="note" data-i18n="consultar">Consultar por WhatsApp</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="restaurante">
+      <div class="wrap split">
+        <div>
+          <h2 class="section-title" data-i18n="resTitle">Restaurante y café</h2>
+          <p class="section-lead" data-i18n="resP">Hay un café en la entrada y un restaurante más abajo, con vista a la cascada.</p>
+          <p class="note" data-i18n="consultar">Consultar por WhatsApp</p>
+        </div>
+        <div class="media">
+          <picture>
+            <source type="image/webp" srcset="assets/photos/restaurante-plato-480.webp 480w, assets/photos/restaurante-plato-800.webp 800w, assets/photos/restaurante-plato-1280.webp 1280w" sizes="(max-width:860px) 100vw, 50vw">
+            <img src="assets/photos/restaurante-plato-800.jpg" width="800" height="1066" alt="Plato de carne, arroz, papas y vegetales del restaurante" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section id="llegar">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="llKicker">Cómo llegar</p>
+        <h2 class="section-title" data-i18n="llTitle">Kilómetro 147, carretera Matagalpa–El Tuma–La Dalia</h2>
+        <p class="section-lead" data-i18n="llP">Está al borde de la carretera, en la comunidad Santa Emilia, a unos 17 km de Matagalpa.</p>
+        <div class="split">
+          <div>
+            <ul class="list">
+              <li data-i18n="liBus">Bus público desde la terminal norte de Matagalpa, rumbo a La Dalia.</li>
+              <li data-i18n="liCamion">Camión del lodge, con salida desde Matagalpa: reserva por WhatsApp.</li>
+              <li data-i18n="liAuto">Vehículo propio o taxi. Hay parqueo en la entrada.</li>
+            </ul>
+            <div class="panel" style="margin-top:18px">
+              <h3 data-i18n="horasTitle">Horarios</h3>
+              <p data-i18n="horasP">El horario más repetido para la visita de día es de 9:00 a 17:00.</p>
+            </div>
+          </div>
+          <div>
+            <div class="map-wrap">
+              <iframe title="Mapa de Eco-Lodge Cascada Blanca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=12.991939,-85.830666&z=15&hl=es&output=embed"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="qKicker">Antes de ir</p>
+        <h2 class="section-title" data-i18n="qTitle">Preguntas frecuentes</h2>
+        <div class="faq">
+          <details class="panel"><summary data-i18n="f1q">¿Qué debo llevar?</summary><div class="faq-body" data-i18n="f1a">Calzado con agarre (las piedras y las gradas se mojan), agua, repelente, una muda si vas a caminar detrás de la cascada — te vas a humedecer — y un impermeable ligero en época de lluvias.</div></details>
+          <details class="panel"><summary data-i18n="f2q">¿Cómo es el clima?</summary><div class="faq-body" data-i18n="f2a">Es zona de montaña: fresco, húmedo y verde. De mayo a noviembre llueve más y el caudal baja más fuerte; de diciembre a abril hay menos lluvia, pero el salto puede verse más delgado al final de la seca.</div></details>
+          <details class="panel"><summary data-i18n="f3q">¿Hay insectos? ¿Qué ropa llevar?</summary><div class="faq-body" data-i18n="f3a">Es un lodge rústico en el bosque. Lleva ropa cómoda de manga, repelente y calcetines. En las habitaciones conviene usar el mosquitero si lo hay. No es un hotel de ciudad.</div></details>
+          <details class="panel"><summary data-i18n="f4q">¿A qué hora atiende el personal si me quedo a dormir?</summary><div class="faq-body" data-i18n="f4a">El restaurante y la atención de day pass cierran alrededor de las 17:00. Varios huéspedes han contado que después solo queda vigilancia. Si te hospedas, pide la cena y el desayuno con anticipación.</div></details>
+          <details class="panel"><summary data-i18n="f5q">¿Se puede nadar?</summary><div class="faq-body" data-i18n="f5a">Hay que respetar las indicaciones del personal. La poza es profunda y el dueño ha advertido que hay remolino. Cerca de la caída el agua puede ser peligrosa. Pregunta al llegar qué zonas están habilitadas ese día.</div></details>
+          <details class="panel"><summary data-i18n="f6q">¿Cuánto cuesta la entrada, el hospedaje o el camión?</summary><div class="faq-body" data-i18n="f6a">Consulta por WhatsApp. Hay cifras distintas en internet y no las damos aquí para no desinformar. El lodge te confirma el precio vigente.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="tKicker">Lo que dicen quienes ya fueron</p>
+        <h2 class="section-title" data-i18n="tTitle">Testimonios</h2>
+        <p class="section-lead" data-i18n="tNote">Citas textuales de reseñas públicas. No son testimonios pagados.</p>
+        <div class="quotes">
+          <blockquote class="panel"><p class="quote" data-i18n="t1">“This place is special, very special. Need an escape for the hustle and bustle, plan an evening or three at Cascada Blanca… A special thank you to Don Victor who received me as if I were a long lost friend.”</p><p class="cite" data-i18n="t1c">Corinne Cahuzac, TripAdvisor, diciembre de 2019</p></blockquote>
+          <blockquote class="panel"><p class="quote" data-i18n="t2">“The owner has created this with passion and it shows. You may get to the cave behind the waterfall which is quite large. Plan to spend some time — here there is no rush.”</p><p class="cite" data-i18n="t2c">CLOSEBY, Matagalpa, TripAdvisor, enero de 2020</p></blockquote>
+          <blockquote class="panel"><p class="quote" data-i18n="t3">“Just tell the bus driver you're going to Cascada Blanca and they stop right in front… Would highly recommend.”</p><p class="cite" data-i18n="t3c">janellef186, TripAdvisor, reseña de julio de 2016 (estadía en junio de 2016)</p></blockquote>
+          <blockquote class="panel"><p class="quote" data-i18n="t4">“A beautiful place, located just 18 km from the city of Matagalpa, can make you feel happy and forget stress immediately… Which you can pass under it and feel the breeze of the water that regenerates you.”</p><p class="cite" data-i18n="t4c">Sightsee644725, TripAdvisor, febrero de 2024</p></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservas">
+      <div class="wrap">
+        <p class="section-kicker" data-i18n="rKicker">Reservas</p>
+        <h2 class="section-title" data-i18n="rTitle">Escríbenos por WhatsApp, con todo en orden</h2>
+        <p class="section-lead" data-i18n="rLead">El formulario arma un mensaje claro, con un código de solicitud, y lo abre en el WhatsApp del lodge: +505 5846 9876.</p>
+        <form class="form" id="reserva-form" action="#" method="get">
+          <div class="fields two">
+            <label><span data-i18n="lTipo">Tipo de reserva</span>
+              <select name="tipo" required>
+                <option value="" data-i18n="optTipo">Elige una opción</option>
+                <option value="entrada" data-i18n="optEntrada">Entrada / day pass</option>
+                <option value="habitacion" data-i18n="optHab">Habitación</option>
+                <option value="camping" data-i18n="optCamp">Camping</option>
+                <option value="tour" data-i18n="optTour">Tour de café y chocolate</option>
+                <option value="kayak" data-i18n="optKayak">Kayak</option>
+                <option value="camion" data-i18n="optCamion">Camión desde Matagalpa</option>
+              </select>
+            </label>
+            <label><span data-i18n="lFecha">Fecha</span>
+              <input type="date" name="fecha" required>
+            </label>
+            <label><span data-i18n="lPersonas">Número de personas</span>
+              <input type="number" name="personas" min="1" max="80" step="1" value="2" required>
+            </label>
+            <label><span data-i18n="lNombre">Tu nombre</span>
+              <input type="text" name="nombre" autocomplete="name" maxlength="80" required>
+            </label>
+            <label><span data-i18n="lIdioma">Idioma de atención</span>
+              <select name="idioma">
+                <option value="es" data-i18n="optEs">Español</option>
+                <option value="en" data-i18n="optEn">English</option>
+              </select>
+            </label>
+            <label style="grid-column:1/-1"><span data-i18n="lNotas">Comentarios (opcional)</span>
+              <textarea name="notas" maxlength="500" rows="3"></textarea>
+            </label>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-wa" type="submit" data-i18n="submit">Abrir WhatsApp</button>
+            <p class="form-note" data-i18n="rHint">Al pulsar, se abre WhatsApp con el mensaje listo.</p>
+          </div>
+          <p class="success" id="reserva-ok" role="status"><span data-i18n="ok">Mensaje listo. Código de esta solicitud:</span> <strong id="reserva-codigo"></strong></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>Eco-Lodge Cascada Blanca</strong></p>
+      <p data-i18n="footerDir">Km 147, carretera Matagalpa–El Tuma–La Dalia, comunidad Santa Emilia, Matagalpa, Nicaragua.</p>
+      <p>WhatsApp: <a href="https://wa.me/50558469876">+505 5846 9876</a> · <a href="mailto:ecocascadablanca@gmail.com">ecocascadablanca@gmail.com</a></p>
+      <p class="socials">
+        <a href="https://www.facebook.com/CascadaBlanca/" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/cascadablanca/" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tripadvisor.com/Hotel_Review-g612407-d7101805-Reviews-Eco_Lodge_Cascada_Blanca-Matagalpa_Matagalpa_Department.html" rel="noopener noreferrer">TripAdvisor</a>
+      </p>
+      <p class="demo-mark" data-i18n="footerDemo">Versión de muestra / Demo · Propuesta no oficial · Esta página no está indexada.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="https://wa.me/50558469876" data-i18n-aria="waLabel" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5A8.5 8.5 0 1 1 8.2 19.3L3.5 20.5l1.3-4.6A8.5 8.5 0 0 1 20 11.5zm-8.5 7.2c1.4 0 2.7-.4 3.8-1l.3-.2 2.2.6-.6-2.1.2-.3a6.2 6.2 0 1 0-2.2 2.2l.3.2c-1.1.7-2.4 1-3.8 1zm3.6-4.6c-.2-.1-1.2-.6-1.3-.6s-.3-.1-.5.1-.5.6-.6.7-.2.2-.4.1a5 5 0 0 1-1.5-.9 5.4 5.4 0 0 1-1-1.2c-.1-.2 0-.3.1-.4l.3-.3.1-.2c0-.1 0-.2 0-.3l-.6-1.3c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.3.1-.5.3s-.6.6-.6 1.5.6 1.7.7 1.8c.1.2 1.2 1.8 2.9 2.5 1.7.7 1.7.5 2 .4s1.1-.4 1.2-.8.2-.7.1-.8c0-.1-.2-.1-.4-.2z"/></svg>
+  </a>
+  <script src="js/site.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    }
+  </script>
+</body>
+</html>
