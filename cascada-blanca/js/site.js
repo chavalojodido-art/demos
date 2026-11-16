@@ -2,9 +2,26 @@
 const WA_NUMBER = "50558469876";
 const HERO_VIDEO_ENABLED = true;
 const HERO_VIDEO = {
+  mobile: { mp4: "media/hero-mobile.mp4", webm: "media/hero-mobile.webm" },
   desktop: { mp4: "media/hero.mp4", webm: "media/hero.webm" },
-  mobile: { mp4: "media/hero-mobile.mp4", webm: "media/hero-mobile.webm" }
+  desktopHq: { mp4: "media/hero-1080.mp4", webm: "media/hero-1080.webm" }
 };
+const HERO_MEDIA = {
+  mobile: "(max-width: 720px) and (orientation: portrait)",
+  desktopHq: "(min-width: 1440px), (min-width: 768px) and (min-resolution: 2dppx)",
+  desktop: "(min-width: 768px)"
+};
+
+function pickHeroPack() {
+  if (window.matchMedia(HERO_MEDIA.mobile).matches) {
+    return { pack: HERO_VIDEO.mobile, media: HERO_MEDIA.mobile, name: "mobile" };
+  }
+  const w = window.innerWidth;
+  const dpr = window.devicePixelRatio || 1;
+  const hq = window.matchMedia("(min-width: 1440px)").matches || (w >= 768 && dpr >= 1.5);
+  if (hq) return { pack: HERO_VIDEO.desktopHq, media: HERO_MEDIA.desktopHq, name: "desktopHq" };
+  return { pack: HERO_VIDEO.desktop, media: HERO_MEDIA.desktop, name: "desktop" };
+}
 
 const I18N = {
   es: {
@@ -266,9 +283,10 @@ function setupHero() {
   }
   const conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
   const saveData = !!(conn && (conn.saveData || /2g/.test(conn.effectiveType || "")));
-  const mobile = window.matchMedia("(max-width: 720px) and (orientation: portrait)").matches;
-  const pack = mobile ? HERO_VIDEO.mobile : HERO_VIDEO.desktop;
-  const media = mobile ? "(max-width: 720px) and (orientation: portrait)" : "";
+  const picked = pickHeroPack();
+  const pack = picked.pack;
+  const media = picked.media;
+  video.dataset.heroPack = picked.name;
   /* Reconstruimos las fuentes para que Safari (apoyo irregular de media en <source>) reciba el archivo correcto. */
   video.querySelectorAll("source").forEach((s) => s.remove());
   const add = (src, type) => {

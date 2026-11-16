@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180.png">
   <link rel="preload" href="assets/fonts/fraunces-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/sourcesans3-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" type="image/webp" href="assets/photos/hero-video-16x9-800.webp" imagesrcset="assets/photos/hero-video-16x9-480.webp 480w, assets/photos/hero-video-16x9-800.webp 800w, assets/photos/hero-video-16x9-1280.webp 1280w" imagesizes="100vw" media="(min-width: 721px), (orientation: landscape)">
+  <link rel="preload" as="image" type="image/webp" href="assets/photos/hero-video-16x9-800.webp" imagesrcset="assets/photos/hero-video-16x9-480.webp 480w, assets/photos/hero-video-16x9-800.webp 800w, assets/photos/hero-video-16x9-1280.webp 1280w, assets/photos/hero-video-16x9-1920.webp 1920w" imagesizes="100vw" media="(min-width: 721px), (orientation: landscape)">
   <link rel="preload" as="image" type="image/webp" href="assets/photos/hero-video-9x16-720.webp" imagesrcset="assets/photos/hero-video-9x16-480.webp 480w, assets/photos/hero-video-9x16-720.webp 720w" imagesizes="100vw" media="(max-width: 720px) and (orientation: portrait)">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -51,17 +51,21 @@
   <main id="contenido">
     <section class="hero" id="inicio">
       <div class="hero-media" aria-hidden="true">
-        <video id="heroVideo" class="hero-video" muted loop playsinline autoplay preload="metadata" poster="assets/photos/hero-video-16x9-800.jpg" data-enabled="true" disablepictureinpicture>
+        <video id="heroVideo" class="hero-video" muted loop playsinline autoplay preload="metadata" poster="assets/photos/hero-video-16x9-1280.jpg" data-enabled="true" disablepictureinpicture>
           <source media="(max-width: 720px) and (orientation: portrait)" src="media/hero-mobile.webm" type="video/webm">
           <source media="(max-width: 720px) and (orientation: portrait)" src="media/hero-mobile.mp4" type="video/mp4">
+          <source media="(min-width: 1440px), (min-width: 768px) and (min-resolution: 2dppx)" src="media/hero-1080.webm" type="video/webm">
+          <source media="(min-width: 1440px), (min-width: 768px) and (min-resolution: 2dppx)" src="media/hero-1080.mp4" type="video/mp4">
+          <source media="(min-width: 768px)" src="media/hero.webm" type="video/webm">
+          <source media="(min-width: 768px)" src="media/hero.mp4" type="video/mp4">
           <source src="media/hero.webm" type="video/webm">
           <source src="media/hero.mp4" type="video/mp4">
         </video>
         <picture>
           <source media="(max-width: 720px) and (orientation: portrait)" type="image/webp" srcset="assets/photos/hero-video-9x16-480.webp 480w, assets/photos/hero-video-9x16-720.webp 720w" sizes="100vw">
           <source media="(max-width: 720px) and (orientation: portrait)" type="image/jpeg" srcset="assets/photos/hero-video-9x16-720.jpg 720w" sizes="100vw">
-          <source type="image/webp" srcset="assets/photos/hero-video-16x9-480.webp 480w, assets/photos/hero-video-16x9-800.webp 800w, assets/photos/hero-video-16x9-1280.webp 1280w" sizes="100vw">
-          <img id="heroPoster" class="hero-poster" src="assets/photos/hero-video-16x9-800.jpg" width="1280" height="720" alt="Cascada Blanca, la cueva y la poza" fetchpriority="high" decoding="async">
+          <source type="image/webp" srcset="assets/photos/hero-video-16x9-480.webp 480w, assets/photos/hero-video-16x9-800.webp 800w, assets/photos/hero-video-16x9-1280.webp 1280w, assets/photos/hero-video-16x9-1920.webp 1920w" sizes="100vw">
+          <img id="heroPoster" class="hero-poster" src="assets/photos/hero-video-16x9-1280.jpg" width="1920" height="1080" alt="Cascada Blanca, la cueva y la poza" fetchpriority="high" decoding="async">
         </picture>
       </div>
       <div class="hero-overlay"></div>
