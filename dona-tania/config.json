@@ -1,0 +1,298 @@
+{
+  "nombre": "Asados Doña Tania",
+  "eslogan": "Fritanga tradicional nicaragüense · Desde 1997",
+  "logo": "assets/logo-dona-tania.jpg",
+  "colores": {
+    "primario": "#ED1651",
+    "secundario": "#3A1220",
+    "acento": "#FBB522"
+  },
+  "moneda": "C$",
+  "whatsapp": "50500000000",
+  "whatsapp_es_placeholder": true,
+  "whatsapp_nota": "NÚMERO FICTICIO DE PRUEBA (505 0000-0000). No es el del restaurante. Cambiar solo cuando el negocio apruebe su número.",
+  "direccion": "Hotel Colón 1c al sur ½c abajo, Los Robles, Managua",
+  "horario": "Lun–Vie 4:00–10:00 p. m. · Dom 2:00–10:00 p. m. · Sábados cerrado",
+  "zona_horaria": "America/Managua",
+  "horario_semana": {
+    "0": "14:00-22:00",
+    "1": "16:00-22:00",
+    "2": "16:00-22:00",
+    "3": "16:00-22:00",
+    "4": "16:00-22:00",
+    "5": "16:00-22:00",
+    "6": null
+  },
+  "retiro": {
+    "intervalo_minutos": 15,
+    "anticipacion_minutos": 30,
+    "ultimo_pedido_antes_cierre_minutos": 30,
+    "dias_a_mostrar": 3,
+    "franjas_recomendadas": [
+      "16:00-17:00"
+    ],
+    "franjas_alta_demanda": [
+      "18:00-20:00"
+    ]
+  },
+  "banner_mejor_hora": "Mejor hora para venir: 4:00–5:00 p. m. (casi sin fila). Viernes y domingo de 6 a 8 p. m. es la hora más llena: pedí antes y retirá sin hacer fila.",
+  "metodos_pago": [
+    "Efectivo",
+    "Tarjeta (crédito/débito) al retirar",
+    "Transferencia"
+  ],
+  "redes": {
+    "facebook": "https://www.facebook.com/AsadosDonaTania"
+  },
+  "armador": {
+    "categoria_carne": "La base",
+    "categoria_complementos": "Los complementos",
+    "categoria_bebidas": "Bebidas",
+    "sabores_refresco": [
+      "Cebada",
+      "Calala",
+      "Melón",
+      "Pitahaya",
+      "Mandarina",
+      "Chía con tamarindo"
+    ]
+  },
+  "combos": [
+    {
+      "id": "combo-res",
+      "nombre": "Fritanga clásica de res",
+      "items": [
+        "carne-de-res",
+        "gallopinto",
+        "tajadas",
+        "queso-crema",
+        "refrescos-naturales"
+      ],
+      "foto": "assets/ph-combo.svg"
+    },
+    {
+      "id": "combo-pollo",
+      "nombre": "Pollo completo",
+      "items": [
+        "pierna-con-muslo",
+        "gallopinto",
+        "maduro",
+        "refrescos-naturales"
+      ],
+      "foto": "assets/ph-combo.svg"
+    },
+    {
+      "id": "combo-tacos",
+      "nombre": "Antojo de tacos",
+      "items": [
+        "tacos",
+        "cacao"
+      ],
+      "foto": "assets/ph-combo.svg"
+    }
+  ],
+  "nota_precios": "Precios referenciales tomados de la carta impresa 2026 (fotos públicas). A confirmar con el restaurante.",
+  "productos": [
+    {
+      "id": "carne-de-res",
+      "nombre": "Carne de res",
+      "descripcion": "Dos tiras de carne de res",
+      "precio": 150,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "carne-de-cerdo",
+      "nombre": "Carne de cerdo",
+      "descripcion": "Dos tiras de carne de cerdo, adobado con achiote",
+      "precio": 140,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "costillas-de-cerdo",
+      "nombre": "Costillas de cerdo",
+      "descripcion": "Una ristra de costillas de cerdo, adobadas con achiote",
+      "precio": 160,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "mixto-res-cerdo",
+      "nombre": "Mixto Res/Cerdo",
+      "descripcion": "Una tira de carne de cerdo, una tira de res",
+      "precio": 150,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "pierna-con-muslo",
+      "nombre": "Pierna con muslo",
+      "descripcion": "Pollo con hueso, sin piel",
+      "precio": 140,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "pechuga-con-ala",
+      "nombre": "Pechuga con ala",
+      "descripcion": "Pollo con hueso, sin piel",
+      "precio": 150,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "pechugon",
+      "nombre": "Pechugón",
+      "descripcion": "Pechuga de más de libra y media de pollo con hueso, sin piel",
+      "precio": 160,
+      "foto": "assets/ph-carne.svg",
+      "categoria": "La base"
+    },
+    {
+      "id": "gallopinto",
+      "nombre": "Gallopinto",
+      "descripcion": "Arroz blanco y frijol rojo cocido, sofrito en aceite vegetal con cebolla y chiltoma",
+      "precio": 40,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "tajadas",
+      "nombre": "Tajadas",
+      "descripcion": "Crujientes tiras de plátano verde, fritas en aceite vegetal",
+      "precio": 40,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "maduro",
+      "nombre": "Maduro",
+      "descripcion": "Suave y dulce plátano maduro entero, frito o asado al carbón",
+      "precio": 40,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "tortilla",
+      "nombre": "Tortilla",
+      "descripcion": "Masa de maíz y agua a la plancha, suave o tostada. Orden de dos",
+      "precio": 25,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "queso-crema",
+      "nombre": "Queso crema",
+      "descripcion": "Queso de leche de vaca pasteurizado, frito o asado al carbón",
+      "precio": 40,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "aguacate",
+      "nombre": "Aguacate",
+      "descripcion": "Rodaja de aguacate fresco",
+      "precio": 35,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "cuajada",
+      "nombre": "Cuajada",
+      "descripcion": "Queso de leche de vaca pasteurizado",
+      "precio": 40,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "crema-acida",
+      "nombre": "Crema ácida",
+      "descripcion": "Crema de leche de vaca pasteurizada",
+      "precio": 20,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "cebollitas-picantes",
+      "nombre": "Cebollitas picantes",
+      "descripcion": "Cebolla y jalapeño, sazonado con vinagre y sal",
+      "precio": 15,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "chismol",
+      "nombre": "Chismol",
+      "descripcion": "Culantro, cebolla y tomate, sazonado con vinagre y sal",
+      "precio": 15,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "ensalada",
+      "nombre": "Ensalada",
+      "descripcion": "Repollo y zanahoria rallada, sazonada con vinagre y sal",
+      "precio": 15,
+      "foto": "assets/ph-complemento.svg",
+      "categoria": "Los complementos"
+    },
+    {
+      "id": "tacos",
+      "nombre": "Tacos",
+      "descripcion": "Rollo de tortilla de maíz relleno de carne de res, con ensalada, salsa de tomate y crema ácida. Fritos en aceite o tostados al carbón",
+      "precio": 130,
+      "foto": "assets/ph-antojito.svg",
+      "categoria": "Antojitos"
+    },
+    {
+      "id": "nacatamal",
+      "nombre": "Nacatamal",
+      "descripcion": "Tamal ácido de masa de maíz, cerdo, verduras y arroz, al vapor en hoja de chagüite",
+      "precio": 70,
+      "foto": "assets/ph-antojito.svg",
+      "categoria": "Antojitos"
+    },
+    {
+      "id": "enchiladas",
+      "nombre": "Enchiladas",
+      "descripcion": "Empanada de masa de maíz frita, rellena de carne de res, arroz y vegetales sofritos, con ensalada. Orden completa de dos piezas",
+      "precio": 130,
+      "foto": "assets/ph-antojito.svg",
+      "categoria": "Antojitos"
+    },
+    {
+      "id": "chorizo-parrillero",
+      "nombre": "Chorizo parrillero",
+      "descripcion": "Embutido artesanal de cerdo con especias al carbón",
+      "precio": 45,
+      "foto": "assets/ph-antojito.svg",
+      "categoria": "Antojitos"
+    },
+    {
+      "id": "bunuelos",
+      "nombre": "Buñuelos",
+      "descripcion": "Esferas de yuca y queso fritas, con miel. Orden de cuatro",
+      "precio": 55,
+      "foto": "assets/ph-antojito.svg",
+      "categoria": "Antojitos"
+    },
+    {
+      "id": "refrescos-naturales",
+      "nombre": "Refresco natural",
+      "descripcion": "A base de fruta, agua y azúcar. Sabor según temporada.",
+      "precio": 40,
+      "foto": "assets/ph-bebida.svg",
+      "categoria": "Bebidas"
+    },
+    {
+      "id": "cacao",
+      "nombre": "Cacao",
+      "descripcion": "Con leche entera, canela y azúcar",
+      "precio": 50,
+      "foto": "assets/ph-bebida.svg",
+      "categoria": "Bebidas"
+    }
+  ],
+  "nombre_corto": "Doña Tania"
+}
