@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#1F6B3A">
+<title>Guía de visita · Comedor Los Coco (uso interno)</title>
+<style>
+  :root { --verde:#1F6B3A; --oscuro:#163322; --maiz:#F2B630; --crema:#FFF8EC; --rojo:#B91C1C; --gris:#4b5563; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif; font-size:20px; line-height:1.5; color:#111; background:var(--crema); }
+  .wrap { max-width:640px; margin:0 auto; padding:0 16px 80px; }
+  header { background:var(--verde); color:#fff; padding:20px 16px 18px; }
+  header h1 { font-size:1.5rem; line-height:1.2; margin:0 0 6px; }
+  header p { margin:0; font-size:1rem; opacity:.95; }
+  .interno { display:inline-block; margin-top:10px; background:var(--maiz); color:var(--oscuro); font-weight:800; font-size:.85rem; padding:4px 10px; border-radius:999px; }
+  nav.indice { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:16px 0; }
+  nav.indice a { display:block; background:#fff; border:2px solid var(--verde); color:var(--oscuro); text-decoration:none; font-weight:700; font-size:.9rem; padding:10px; border-radius:14px; }
+  section { background:#fff; border-radius:18px; padding:18px 16px; margin:16px 0; box-shadow:0 4px 18px rgba(0,0,0,.06); }
+  h2 { font-size:1.35rem; line-height:1.25; margin:0 0 10px; color:var(--verde); }
+  h2 .n { display:inline-grid; place-items:center; width:38px; height:38px; border-radius:50%; background:var(--verde); color:#fff; font-size:1.1rem; margin-right:8px; vertical-align:middle; }
+  h3 { font-size:1.1rem; margin:18px 0 6px; }
+  ol, ul { padding-left:1.3em; margin:8px 0; }
+  li { margin:8px 0; }
+  .frase { font-size:1.35rem; font-weight:800; color:var(--oscuro); background:color-mix(in srgb,var(--maiz) 30%,#fff); border-left:8px solid var(--maiz); padding:12px 14px; border-radius:12px; }
+  .guion { background:#F3FAF5; border:2px solid var(--verde); border-radius:14px; padding:14px; }
+  .guion p { margin:0 0 12px; }
+  .guion .accion { color:var(--gris); font-style:italic; font-size:.95rem; }
+  .tiempo { font-size:.85rem; font-weight:800; color:var(--verde); }
+  figure { margin:12px 0; text-align:center; }
+  figure img { width:100%; max-width:340px; border-radius:16px; border:1px solid #ddd; box-shadow:0 4px 14px rgba(0,0,0,.08); }
+  figcaption { font-size:.9rem; color:var(--gris); margin-top:6px; }
+  .dos { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .dos figure img { max-width:100%; }
+  .ok, .no { border-radius:14px; padding:12px 14px; margin:10px 0; }
+  .ok { background:#ECFDF3; border:2px solid #15803D; }
+  .no { background:#FEF2F2; border:2px solid var(--rojo); }
+  .no li::marker { content:"✖  "; color:var(--rojo); }
+  .precios { background:#FEF2F2; border:4px dashed var(--rojo); text-align:center; }
+  .precios .grande { font-size:1.6rem; font-weight:900; color:var(--rojo); margin:6px 0 10px; }
+  .obj { border:1px solid #e5e7eb; border-radius:14px; padding:12px; margin:10px 0; }
+  .obj b.q { display:block; color:var(--rojo); font-size:1.05rem; }
+  .obj p { margin:6px 0 0; }
+  .box { background:#F9FAFB; border:1px solid #e5e7eb; border-radius:14px; padding:12px; }
+  .btn { display:block; width:100%; text-align:center; background:var(--verde); color:#fff; font-weight:800; font-size:1.05rem; padding:16px; border-radius:16px; text-decoration:none; border:0; margin:10px 0; font-family:inherit; }
+  .btn.sec { background:#fff; color:var(--verde); border:2px solid var(--verde); }
+  .check li { list-style:none; margin-left:-1.3em; }
+  .check input { width:24px; height:24px; vertical-align:middle; margin-right:8px; }
+  textarea { width:100%; font-size:1rem; font-family:inherit; border-radius:12px; border:1px solid #ccc; padding:10px; }
+  .chico { font-size:.88rem; color:var(--gris); }
+  .hora { font-size:1.2rem; font-weight:800; color:var(--oscuro); }
+  footer { text-align:center; font-size:.85rem; color:var(--gris); margin-top:24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Cómo visitar a Comedor Los Coco</h1>
+  <p>Guía paso a paso para enseñarle la app de prueba al dueño o a la dueña.</p>
+  <span class="interno">SOLO PARA VOS · no se la enseñés al cliente</span>
+</header>
+<div class="wrap">
+
+<nav class="indice" aria-label="Índice">
+  <a href="#que">1. Qué vendemos</a>
+  <a href="#antes">2. Antes de ir</a>
+  <a href="#presentarse">3. Cómo presentarte</a>
+  <a href="#guion">4. Qué decir (90 s)</a>
+  <a href="#prueba">5. Que la pruebe</a>
+  <a href="#objeciones">6. Si te dice…</a>
+  <a href="#nodecir">7. Qué NO decir</a>
+  <a href="#precios">8. Precios</a>
+  <a href="#cerrar">9. Cómo cerrar</a>
+  <a href="#si">10. Si dice que sí</a>
+</nav>
+
+<section id="que">
+  <h2><span class="n">1</span>Qué vendemos, en 1 frase</h2>
+  <p class="frase">Una app sencilla para el celular donde los clientes de Los Coco ven la pizarra del día, apartan mesa y piden para llevar, y todo le llega al dueño ordenadito por WhatsApp.</p>
+  <p class="chico">No es para cambiar cómo cocinan. Es para que la gente no llegue “a ciegas” y no tenga que esperar de pie.</p>
+</section>
+
+<section id="antes">
+  <h2><span class="n">2</span>Antes de la visita</h2>
+  <ul class="check">
+    <li><label><input type="checkbox"> <b>Cargá el celular al 100 %</b> y revisá que tengás datos o saldo.</label></li>
+    <li><label><input type="checkbox"> <b>Abrí la demo</b> en tu celular y <b>instalala</b> (pasos abajo).</label></li>
+    <li><label><input type="checkbox"> <b>Imprimí el QR</b> (1 hoja, a color si se puede).</label></li>
+    <li><label><input type="checkbox"> Hacé <b>un pedido de prueba</b> vos misma para que sepás cómo se ve.</label></li>
+    <li><label><input type="checkbox"> Llevá lapicero y esta guía abierta.</label></li>
+  </ul>
+
+  <a class="btn" href="https://chavalojodido-art.github.io/demos/los-coco/" target="_blank" rel="noopener">Abrir la demo de Los Coco</a>
+  <a class="btn sec" href="img/qr_imprimible.png" download="QR_demo_Los_Coco.png">Descargar el QR para imprimir</a>
+  <figure><img src="img/qr_imprimible.png" alt="Hoja con el QR de la demo para imprimir" loading="lazy" style="max-width:260px"><figcaption>Esta es la hoja que vas a imprimir.</figcaption></figure>
+
+  <h3>Cómo instalarla en iPhone</h3>
+  <ol>
+    <li>Abrí el enlace en <b>Safari</b> (no en Facebook ni en WhatsApp).</li>
+    <li>Tocá el botón <b>Compartir</b> (el cuadrito con flecha, abajo).</li>
+    <li>Elegí <b>“Agregar a inicio”</b> y después <b>“Agregar”</b>.</li>
+  </ol>
+  <figure><img src="img/10_iphone_banner_instalar.jpg" alt="Aviso de instalación en iPhone" loading="lazy"><figcaption>En iPhone la app misma te dice los 3 pasos.</figcaption></figure>
+
+  <h3>Cómo instalarla en Android</h3>
+  <ol>
+    <li>Abrí el enlace en <b>Chrome</b>.</li>
+    <li>Si sale el botón <b>“Instalar app”</b>, tocalo. Si no sale, tocá los <b>3 puntitos ⋮</b> arriba a la derecha y elegí <b>“Instalar app”</b> o <b>“Agregar a pantalla principal”</b>.</li>
+  </ol>
+  <div class="dos">
+    <figure><img src="img/17_pixel_boton_instalar_app.jpg" alt="Botón Instalar app en Android" loading="lazy"><figcaption>Botón “Instalar app”.</figcaption></figure>
+    <figure><img src="img/16_pixel_banner_android.jpg" alt="Instrucción del menú de 3 puntitos" loading="lazy"><figcaption>Si no sale: menú ⋮.</figcaption></figure>
+  </div>
+  <p class="chico">Si la abrís desde WhatsApp o Facebook, la app te va a decir “Abrí esta demo en Chrome/Safari”. Hacele caso.</p>
+
+  <h3>La mejor hora para visitar</h3>
+  <p>Según los datos públicos de Google, el comedor está más tranquilo después del almuerzo:</p>
+  <p class="hora">✅ Martes o miércoles, de 2:00 a 2:30 p. m.</p>
+  <p>Otra opción: lunes, viernes o sábado a las 2:00 p. m. (cierran a las 3:00 p. m., no llegués tarde).</p>
+  <div class="no"><b>Evitá:</b>
+    <ul>
+      <li>De <b>11:00 a. m. a 1:00 p. m.</b> cualquier día: está lleno, la gente espera mesa.</li>
+      <li><b>Domingo</b>: de 8 a 10 a. m. es lo más lleno de la semana y cierran a las 11:00 a. m.</li>
+    </ul>
+  </div>
+  <p class="chico">Tip: pedí un café o un fresco y pagalo como cualquier cliente. Fijate en la pizarra de la caja y en cómo dan el papelito de la cuenta. Así hablás con conocimiento.</p>
+</section>
+
+<section id="presentarse">
+  <h2><span class="n">3</span>Cómo presentarte</h2>
+  <ol>
+    <li>Saludá con calma y preguntá: <b>“Buenas tardes, ¿me podría decir con quién puedo hablar, con el dueño o la encargada?”</b></li>
+    <li>Si está ocupado, decí: <b>“No se preocupe, ¿a qué hora le queda mejor? Son 3 minutitos.”</b> Anotá la hora y volvé.</li>
+    <li>Cuando te atienda: tu nombre, que trabajás con <b>Juan</b>, y que <b>hoy no le venís a cobrar nada</b>, solo a enseñarle algo.</li>
+    <li>Tené el celular <b>ya abierto en la app</b> antes de empezar a hablar.</li>
+  </ol>
+  <p class="chico">Tratalo de <b>usted</b>. Hablá despacio, sin palabras técnicas (no digás “PWA”, “link”, “app web”; decí “la aplicación”, “el enlace”).</p>
+</section>
+
+<section id="guion">
+  <h2><span class="n">4</span>Qué decir, palabra por palabra (90 segundos)</h2>
+  <div class="guion">
+    <p class="tiempo">0:00 – 0:15 · Saludo</p>
+    <p>“Buenas tardes, mucho gusto, soy <b>[tu nombre]</b>. Trabajo con Juan, hacemos aplicaciones sencillas para negocios de aquí. Hoy no le vengo a cobrar nada, solo a enseñarle algo que hicimos pensando en su comedor. ¿Me regala un minuto y medio?”</p>
+    <p class="tiempo">0:15 – 0:30 · Lo bueno</p>
+    <p>“Su comedor tiene muy buena fama. En Google tiene 4.3 estrellas con más de 580 opiniones, y la gente dice que las tortillas hechas al momento y el nacatamal son de lo mejor.”</p>
+    <p class="tiempo">0:30 – 0:55 · Lo que dicen los clientes</p>
+    <p>“Pero en esas mismas opiniones la gente repite tres cosas. Uno: que siempre está lleno y hay que esperar mesa, sobre todo al mediodía y el domingo en la mañana. Dos: que no saben qué hay ni cuánto cuesta hasta llegar a la caja; un cliente escribió que <i>‘es una rifa cuando tenés que pagar en caja, vas a ciegas’</i>. Y tres: que cuando se acaba un plato, se tacha en la pizarra y el cliente se da cuenta ya estando aquí.”</p>
+    <p class="tiempo">0:55 – 1:20 · Enseñar</p>
+    <p class="accion">(Enseñale tu celular con la app abierta.)</p>
+    <p>“Mire, esta es una app de prueba con su pizarra. El cliente ve lo que hay hoy. Si se acaba el nacatamal, usted toca aquí y le sale ‘Agotado’. El cliente puede apartar turno de mesa o pedir para llevar a una hora, y el pedido le llega a usted ordenado por WhatsApp, con un código para la caja. Ya no hace falta el papelito.”</p>
+    <p class="tiempo">1:20 – 1:30 · Invitación</p>
+    <p>“¿Quiere que le llegue un pedido de prueba a <b>su propio WhatsApp</b> ahorita? Son dos minutos.”</p>
+  </div>
+  <p class="chico">Si te dice que sí, pasá al paso 5. Si te dice que no tiene tiempo, preguntá qué día le queda mejor y anotalo.</p>
+</section>
+
+<section id="prueba">
+  <h2><span class="n">5</span>Cómo hacer que el dueño la pruebe</h2>
+  <h3>A) Que la abra en SU celular</h3>
+  <ol>
+    <li>Pedile que abra la <b>cámara</b> y apunte al <b>QR impreso</b>. Que toque el enlace que aparece.</li>
+    <li>Si tiene <b>iPhone</b>: que la abra en Safari → Compartir → “Agregar a inicio”.</li>
+    <li>Si tiene <b>Android</b>: Chrome → “Instalar app” o menú ⋮ → “Instalar app”.</li>
+    <li>Decile: “Ya le quedó como una app más, con su ícono”.</li>
+  </ol>
+  <figure><img src="img/01_inicio.jpg" alt="Pantalla de inicio de la demo de Los Coco" loading="lazy"><figcaption>Así se ve al abrirla: abierto/cerrado, mejor hora y 4 botones grandes.</figcaption></figure>
+
+  <h3>B) Activar el “Modo dueño” (para que el pedido le llegue a él)</h3>
+  <ol>
+    <li>Bajá hasta el final de la app y tocá <b>“Probar como dueño”</b>.</li>
+    <li>Que escriba <b>su número de WhatsApp</b> (8 dígitos) y toque <b>“Guardar y probar”</b>.</li>
+    <li>Arriba sale una cinta verde: <b>“Modo dueño · pedidos a +505 …”</b>. Listo.</li>
+  </ol>
+  <div class="dos">
+    <figure><img src="img/11_modo_dueno_3_pasos.jpg" alt="Ventana Probar como dueño" loading="lazy"><figcaption>Escribe su número.</figcaption></figure>
+    <figure><img src="img/12_modo_dueno_activo.jpg" alt="Modo dueño activo" loading="lazy"><figcaption>Cinta verde = activo.</figcaption></figure>
+  </div>
+  <p class="chico">Su número queda guardado <b>solo en su celular</b>. No se manda a ningún lado.</p>
+
+  <h3>C) Hacer un pedido de prueba juntos</h3>
+  <ol>
+    <li>Tocá <b>“Ver la pizarra de hoy”</b> y agregá un plato (por ejemplo <b>Nacatamal → + Cerdo</b>).</li>
+    <li>Tocá <b>“Ver pedido”</b>, poné un nombre y elegí una <b>hora</b>.</li>
+    <li>Tocá <b>“Enviar pedido por WhatsApp”</b>. Se abre WhatsApp con el pedido escrito: que lo envíe.</li>
+    <li>¡Le llega a su propio WhatsApp! Enseñale el <b>código</b> (LC-…) que el cliente dice en caja.</li>
+  </ol>
+  <div class="dos">
+    <figure><img src="img/04_pedido_con_hora.jpg" alt="Elegir hora de retiro" loading="lazy"><figcaption>El cliente elige la hora.</figcaption></figure>
+    <figure><img src="img/05_pedido_enviado_codigo.jpg" alt="Pedido listo con código" loading="lazy"><figcaption>Código para la caja.</figcaption></figure>
+  </div>
+
+  <h3>D) Enseñale a marcar “Agotado”</h3>
+  <ol>
+    <li>En la pizarra tocá <b>“✏️ Editar pizarra”</b> (o “Soy el dueño”).</li>
+    <li>Tocá el botón verde <b>“Hay”</b> de un plato: se pone rojo, <b>“Agotado”</b>.</li>
+    <li>Tocá <b>“Listo”</b>: el plato sale tachado y nadie lo puede pedir.</li>
+  </ol>
+  <div class="dos">
+    <figure><img src="img/08_dueno_marca_agotado.jpg" alt="Pizarra del dueño con botones Hay y Agotado" loading="lazy"><figcaption>Un toque = agotado.</figcaption></figure>
+    <figure><img src="img/09_cliente_ve_agotado.jpg" alt="El cliente ve el plato agotado" loading="lazy"><figcaption>Así lo ve el cliente.</figcaption></figure>
+  </div>
+  <p class="chico">Decile la verdad: “En esta prueba, el cambio se ve solo en este celular. En la app de verdad, lo ven todos los clientes al instante”.</p>
+
+  <h3>E) Turno de mesa</h3>
+  <p>Tocá <b>“Apartar turno de mesa”</b>: personas, cuándo llega y si prefiere abajo o arriba. Le llega al WhatsApp y el comedor le responde cuando la mesa esté lista.</p>
+  <div class="dos">
+    <figure><img src="img/06_turno_mesa.jpg" alt="Formulario de turno de mesa" loading="lazy"><figcaption>Pedir turno.</figcaption></figure>
+    <figure><img src="img/07_turno_mesa_enviado.jpg" alt="Turno de mesa pedido" loading="lazy"><figcaption>Turno enviado.</figcaption></figure>
+  </div>
+  <p class="chico">Al terminar, si quiere, tocá <b>“Modo dueño activo · cambiar número”</b> → <b>“Quitar mi número”</b>. O dejásela así para que la siga probando.</p>
+</section>
+
+<section id="objeciones">
+  <h2><span class="n">6</span>Si te dice…</h2>
+  <div class="obj"><b class="q">“Ya tengo WhatsApp.”</b>
+    <p>“¡Qué bueno! Esto usa su mismo WhatsApp. Lo que cambia es que el pedido le llega ordenado: qué plato, a qué hora y con código. No tiene que estar preguntando ni escribiendo papelitos.”</p></div>
+  <div class="obj"><b class="q">“No sé de tecnología.”</b>
+    <p>“No necesita. Usted solo toca ‘Agotado’, como cuando tacha la pizarra. Lo demás le llega al WhatsApp como un mensaje normal. Juan se lo deja todo listo.”</p></div>
+  <div class="obj"><b class="q">“Está caro.” / “¿Cuánto cuesta?”</b>
+    <p>“Eso lo ve directamente con Juan, según lo que usted necesite. Yo hoy solo vengo a enseñársela. ¿Le parece si Juan le explica?”</p>
+    <p class="chico"><b>No des ningún precio</b> (mirá la sección 8).</p></div>
+  <div class="obj"><b class="q">“Lo voy a pensar.”</b>
+    <p>“Claro, con toda confianza. Se la dejo instalada en su celular para que la vea con calma. ¿Qué día le puedo volver a visitar, o prefiere que Juan le escriba?”</p>
+    <p class="chico">Anotá el día y la hora que te diga.</p></div>
+  <div class="obj"><b class="q">“¿Y si se cae el internet?”</b>
+    <p>“El comedor sigue trabajando igual que siempre, con su pizarra y su caja. Si el cliente ya la abrió antes, la app se puede ver aunque la señal esté mala, pero para mandar un pedido el cliente sí necesita internet, igual que para mandar cualquier WhatsApp.”</p></div>
+  <div class="obj"><b class="q">“Ya estoy en PedidosYa.”</b>
+    <p>“Está bien, esto no lo tiene que quitar. Esto es para sus clientes de siempre: ven la pizarra, apartan mesa y le piden directo a su WhatsApp, sin pasar por otra empresa. Los detalles de cómo funciona el cobro se los explica Juan.”</p></div>
+</section>
+
+<section id="nodecir">
+  <h2><span class="n">7</span>Qué NO decir ni prometer</h2>
+  <div class="no"><ul>
+    <li><b>No des precios</b> ni “más o menos cuánto sale”.</li>
+    <li>No prometás <b>más clientes</b> ni <b>más ventas</b> en números.</li>
+    <li>No digás que <b>otros comedores ya la usan</b> ni inventés casos o testimonios.</li>
+    <li>No prometás <b>fechas de entrega</b>, delivery, pagos con tarjeta en la app ni cosas que la demo no hace.</li>
+    <li>No digás que la demo <b>ya es oficial</b> ni que <b>ya recibe pedidos reales</b>. Es una prueba.</li>
+    <li>No critiqués el local (calor, rótulo, parqueo). Hablá solo de lo que la app ayuda.</li>
+    <li>No le pidás <b>contraseñas, datos del banco</b> ni que te preste su celular sin él presente.</li>
+    <li>No compartás el QR ni el enlace en grupos o redes sociales.</li>
+    <li>No tomés fotos de los clientes ni del local sin permiso.</li>
+  </ul></div>
+  <div class="ok"><b>Sí podés decir:</b> “Es una prueba hecha para su comedor”, “le llega a su WhatsApp”, “Juan le explica los detalles”, “lo que dicen sus clientes en Google”.</div>
+</section>
+
+<section id="precios" class="precios">
+  <h2 style="color:var(--rojo)"><span class="n" style="background:var(--rojo)">8</span>Precios</h2>
+  <p class="grande">[Pendiente: Juan define]</p>
+  <p><b>NO des precios hasta que Juan los confirme.</b><br>Si te preguntan, decí: <i>“Eso se lo explica Juan directamente.”</i></p>
+</section>
+
+<section id="cerrar">
+  <h2><span class="n">9</span>Cómo cerrar y qué anotar</h2>
+  <p>Al final preguntá:</p>
+  <p class="frase" style="font-size:1.15rem">“¿Le gustaría que Juan le prepare la versión de verdad, con sus platos y su número?”</p>
+  <h3>Anotá esto (antes de irte)</h3>
+  <ol>
+    <li>Nombre de quien te atendió y su cargo (dueño, dueña, encargada).</li>
+    <li>El <b>nombre exacto</b> del comedor como ellos lo dicen (“Los Coco”, “Doña Coco”…).</li>
+    <li>El número de WhatsApp del negocio <b>solo si te lo da y te dice que Juan le puede escribir</b>.</li>
+    <li>Quién marcaría “Agotado” en la app (el dueño, la cajera…).</li>
+    <li>Qué le gustó más: pizarra, turno de mesa o pedido para llevar.</li>
+    <li>Qué le preocupa (la objeción, con sus palabras).</li>
+    <li>Si tiene iPhone o Android, y si se la dejó instalada.</li>
+    <li>Respuesta: <b>Sí / Lo piensa / No</b>, y el <b>próximo paso</b> con fecha y hora.</li>
+  </ol>
+  <label for="notas" class="chico">Podés escribir aquí mismo (se queda solo en tu celular):</label>
+  <textarea id="notas" rows="6" placeholder="Nombre: …&#10;Cargo: …&#10;Le gustó: …&#10;Le preocupa: …&#10;Respuesta y próximo paso: …"></textarea>
+</section>
+
+<section id="si">
+  <h2><span class="n">10</span>Si dice que sí</h2>
+  <ol>
+    <li>Dale las gracias y decile: <b>“Juan le va a escribir hoy mismo para los detalles.”</b></li>
+    <li><b>No acordés precios ni fechas.</b> Eso lo hace Juan.</li>
+    <li><b>Avisale a Juan de una vez</b> por WhatsApp (a su número de siempre) con este mensaje:</li>
+  </ol>
+  <div class="box" id="msg-juan" style="white-space:pre-line">✅ Juan, Comedor Los Coco (Matagalpa) dijo que SÍ.
+Me atendió: [nombre y cargo]
+WhatsApp del negocio (con permiso): [número]
+Le gustó: [pizarra / turno de mesa / para llevar]
+Le preocupa: [lo que dijo]
+Celular: [iPhone / Android], ¿quedó instalada?: [sí/no]
+Próximo paso: [día y hora]</div>
+  <button class="btn" type="button" id="copiar">Copiar mensaje para Juan</button>
+  <p class="chico">Si dice <b>“lo pienso”</b> o <b>“no”</b>, igual avisale a Juan con lo que anotaste. Un “no” también sirve para aprender.</p>
+</section>
+
+<footer>
+  Guía interna · Comedor Los Coco (P026) · versión 16 nov 2026<br>
+  Los datos de esta guía salen de reseñas públicas (Google, Restaurant Guru y otras). La app es una demo, no es oficial.
+</footer>
+</div>
+<script>
+  document.getElementById("copiar").addEventListener("click", function () {
+    var t = document.getElementById("msg-juan").innerText, b = this;
+    var ta = document.createElement("textarea"); ta.value = t; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    if (!ok && navigator.clipboard) navigator.clipboard.writeText(t).catch(function(){});
+    b.textContent = "¡Copiado! Ahora pegalo en WhatsApp";
+  });
+  var n = document.getElementById("notas"), K = "guia_los_coco_notas";
+  try { n.value = localStorage.getItem(K) || ""; } catch (e) {}
+  n.addEventListener("input", function () { try { localStorage.setItem(K, n.value); } catch (e) {} });
+</script>
+</body>
+</html>
