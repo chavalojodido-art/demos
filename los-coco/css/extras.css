@@ -1,0 +1,29 @@
+/* Extras genéricos: banner de instalación y modo dueño */
+.dx-banner { position: fixed; left: 50%; transform: translateX(-50%); top: calc(var(--banner-h, 36px) + 8px); width: calc(100% - 20px); max-width: 460px; z-index: 900; background: #fff; color: #1C1917; border-radius: 16px; box-shadow: 0 12px 34px rgba(0,0,0,.22); padding: 12px 36px 12px 12px; display: flex; gap: 10px; align-items: flex-start; border: 2px solid var(--primario, #C2410C); font-size: .84rem; line-height: 1.35; }
+.dx-icono { width: 44px; height: 44px; border-radius: 10px; flex-shrink: 0; }
+.dx-texto strong { display: block; font-size: .95rem; margin-bottom: 2px; color: var(--primario, #C2410C); }
+.dx-texto p, .dx-texto ol { margin: 0; }
+.dx-texto ol { padding-left: 18px; }
+.dx-texto svg { vertical-align: -3px; color: #0A84FF; }
+.dx-acciones { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+.dx-btn { background: var(--primario, #C2410C); color: #fff; border: 0; border-radius: 999px; padding: 9px 16px; font-weight: 800; font-size: .85rem; text-decoration: none; display: inline-block; cursor: pointer; }
+.dx-btn.dx-sec { background: #fff; color: var(--primario, #C2410C); border: 2px solid var(--primario, #C2410C); }
+.dx-btn.dx-ancho { width: 100%; padding: 13px; font-size: .95rem; margin-top: 4px; }
+.dx-cerrar { position: absolute; top: 4px; right: 6px; width: 32px; height: 32px; font-size: 1.4rem; line-height: 1; color: #78716C; background: none; border: 0; cursor: pointer; }
+.dx-modal { position: fixed; inset: 0; z-index: 1100; background: rgba(0,0,0,.45); display: flex; align-items: flex-end; justify-content: center; }
+.dx-caja { position: relative; background: #fff; width: 100%; max-width: 480px; border-radius: 20px 20px 0 0; padding: 20px 18px calc(20px + env(safe-area-inset-bottom, 0px)); max-height: 92dvh; overflow-y: auto; color: #1C1917; }
+.dx-caja h2 { font-size: 1.15rem; color: var(--primario, #C2410C); }
+.dx-sub { font-size: .85rem; color: #57534E; margin: 4px 0 12px; }
+.dx-caja label { display: block; font-weight: 700; font-size: .82rem; margin: 12px 0 6px; }
+.dx-caja input { width: 100%; border: 1px solid #D6D3D1; border-radius: 12px; padding: 12px; font-size: 1rem; }
+.dx-caja input:focus { outline: none; border-color: var(--primario, #C2410C); }
+.dx-aviso { color: #B91C1C; font-size: .8rem; min-height: 1.1em; margin: 6px 0; }
+.dx-nota { font-size: .72rem; color: #78716C; margin-top: 10px; text-align: center; }
+.dx-link { display: block; width: 100%; margin-top: 10px; background: none; border: 0; color: #B91C1C; font-weight: 700; font-size: .82rem; text-decoration: underline; cursor: pointer; }
+.dx-pasos { background: color-mix(in srgb, var(--primario, #C2410C) 8%, #fff); border-radius: 14px; padding: 10px 12px; font-size: .82rem; }
+.dx-pasos h3 { font-size: .9rem; margin-bottom: 4px; }
+.dx-pasos ol { padding-left: 18px; display: grid; gap: 4px; }
+.dx-pasos svg { vertical-align: -3px; color: #0A84FF; }
+.dx-chip { position: fixed; left: 50%; transform: translateX(-50%); top: calc(var(--banner-h, 36px) + 4px); z-index: 800; background: #15803D; color: #fff; border: 0; border-radius: 999px; padding: 5px 12px; font-size: .72rem; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,.2); white-space: nowrap; cursor: pointer; }
+.dx-pie-dueno { margin-top: 10px; background: none; border: 1px dashed #A8A29E; color: #57534E; border-radius: 999px; padding: 6px 14px; font-size: .75rem; font-weight: 600; cursor: pointer; }
+.dx-con-chip .dx-banner { top: calc(var(--banner-h, 36px) + 40px); }
