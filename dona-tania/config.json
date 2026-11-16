@@ -294,5 +294,6 @@
       "categoria": "Bebidas"
     }
   ],
-  "nombre_corto": "Doña Tania"
+  "nombre_corto": "Doña Tania",
+  "logo_circular": true
 }

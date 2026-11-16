@@ -378,7 +378,7 @@
           <div class="campo"><label for="cli-notas">Notas (opcional)</label><textarea id="cli-notas" rows="2" placeholder="Ej.: carne bien cocida, sin cebollitas">${esc(state.cliente.notas)}</textarea></div>
           <p class="aviso" id="aviso-pedido">${esc(state.aviso)}</p>
           <button type="submit" class="btn-primario" id="btn-whatsapp">Enviar pedido por WhatsApp</button>
-          <p class="ayuda">Se abrirá WhatsApp con el pedido ya escrito para que lo confirmes.<br><b>Demo:</b> va a un número de prueba ficticio, no al restaurante.</p>
+          <p class="ayuda">Se abrirá WhatsApp con el pedido ya escrito para que lo confirmes.<br>${window.DemoExtras && window.DemoExtras.modoDueno() ? "<b>Modo dueño:</b> el pedido va a <b>tu</b> WhatsApp." : "<b>Demo:</b> va a un número de prueba ficticio, no al restaurante."}</p>
         </form>` : ""}
       </div>`;
   }
@@ -476,7 +476,7 @@
   }
 
   function urlWhatsApp(texto) {
-    const num = String(state.config.whatsapp || "").replace(/\D/g, "");
+    const num = String((window.DemoExtras ? window.DemoExtras.numero(state.config.whatsapp) : state.config.whatsapp) || "").replace(/\D/g, "");
     return `https://wa.me/${num}?text=${encodeURIComponent(texto)}`;
   }
   function abrirWhatsApp(texto) {
