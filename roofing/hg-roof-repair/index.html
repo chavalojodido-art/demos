@@ -173,7 +173,7 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
 <div class="hero" id="top">
   <div class="hero-media">
     <img src="assets/hero.webp" alt="" fetchpriority="high">
-    <video id="hv" muted loop playsinline preload="none" aria-hidden="true" data-src="assets/hero.mp4"></video>
+    <video id="hv" autoplay muted loop playsinline preload="none" aria-hidden="true" poster="assets/hero-poster.jpg" data-src="assets/hero.mp4" data-src-sm="assets/hero-720.mp4"></video>
   </div>
   <div class="hero-in">
     <span class="kicker fade"><i></i>Roofing in San Antonio</span>
@@ -303,7 +303,7 @@ footer a{text-decoration:none}footer a:hover{color:#fff}
   // optional hero video (assets/hero.mp4); falls back to Ken Burns photo
   var v=document.getElementById('hv');
   if(v&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!(navigator.connection&&navigator.connection.saveData)){
-    v.src=v.dataset.src;v.addEventListener('canplay',function(){v.classList.add('on');v.play().catch(function(){})},{once:true});
+    v.muted=true;v.src=(innerWidth<900?v.dataset.srcSm:v.dataset.src);v.addEventListener('canplay',function(){v.classList.add('on');v.play().catch(function(){})},{once:true});
     v.addEventListener('error',function(){v.remove()});v.load();
   }
 })();
